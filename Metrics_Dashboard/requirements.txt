@@ -3,5 +3,6 @@ dash_bootstrap_components==1.1.0
 joblib==1.1.0
 pandas==1.4.2
 plotly==5.8.2
+category-encoders==2.5.0
 scikit_learn==1.1.1
 gunicorn
