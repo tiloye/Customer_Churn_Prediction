@@ -2,7 +2,7 @@ import gradio as gr
 from metrics import show_metrics, estimate_costs
 
 # buid app UI
-with gr.Blocks(css=".gradio-container {/*...*/ align-items: center}", title="Precision-Recall Trade-off for Churn Prediction Model") as demo:
+with gr.Blocks(css=".row {align-items: center}", title="Precision-Recall Trade-off for Churn Prediction Model") as demo:
 
     with gr.Row():
         pr_threshold = gr.Slider(minimum=0.0, maximum=1.0, value=0.5)
