@@ -1,14 +1,21 @@
 import gradio as gr
 from metrics import show_metrics, estimate_costs
 
-# buid app UI
-with gr.Blocks(css=".row {align-items: center}", title="Precision-Recall Trade-off for Churn Prediction Model") as demo:
+# define css style
+css = """
+    .row {align-items: center}
+    h1 {text-align: center; font-size:30px}
+"""
 
+# buid app UI
+with gr.Blocks(css=css, title="Precision-Recall Trade-off for Churn Prediction Model") as demo:
     with gr.Row():
-        pr_threshold = gr.Slider(minimum=0.0, maximum=1.0, value=0.5)
+        gr.HTML("<h1>Churn Model Performance Metrics</h1>")
+    with gr.Row():
+        pr_threshold = gr.Slider(minimum=0.0, maximum=1.0, value=0.5, label="Probability Threshold")
     with gr.Row():
         with gr.Column(min_width=500):
-            pr_confusion_matrix = gr.Plot(label="True Value vs Predicted Value")
+            pr_confusion_matrix = gr.Plot(label="Confusion Matrix")
         with gr.Column(scale=2):
             with gr.Row():
                 with gr.Column():
