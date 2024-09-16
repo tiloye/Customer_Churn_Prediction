@@ -1,10 +1,10 @@
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-import joblib as jb
-import plotly.express as px
 import pathlib
-from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay, accuracy_score, precision_score, recall_score
+
+import joblib as jb
+import pandas as pd
+import plotly.express as px
+from sklearn.metrics import (accuracy_score, confusion_matrix, precision_score,
+                             recall_score)
 
 # load data
 PATH = pathlib.Path(__file__).parent
@@ -60,9 +60,9 @@ def show_metrics(probability_threshold):
     fig.update_layout(title_x=0.5, coloraxis_showscale=False)
 
     # get metrics
-    accuracy = accuracy_score(y, predictions).round(2)
-    precision = precision_score(y, predictions).round(2)
-    recall = recall_score(y, predictions).round(2)
+    accuracy = round(accuracy_score(y, predictions), 2)
+    precision = round(precision_score(y, predictions), 2)
+    recall = round(recall_score(y, predictions), 2)
 
     return fig, accuracy, precision, recall
 

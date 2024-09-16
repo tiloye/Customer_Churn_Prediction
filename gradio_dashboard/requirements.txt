@@ -1,0 +1,15 @@
+category-encoders==2.6.3
+joblib==1.4.2
+numpy==2.1.1
+packaging==24.1
+pandas==2.2.2
+patsy==0.5.6
+python-dateutil==2.9.0.post0
+pytz==2024.2
+scikit-learn==1.5.2
+scipy==1.14.1
+six==1.16.0
+statsmodels==0.14.3
+threadpoolctl==3.5.0
+tzdata==2024.1
+plotly==5.24.1

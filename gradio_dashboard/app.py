@@ -1,5 +1,6 @@
 import gradio as gr
-from metrics import show_metrics, estimate_costs
+
+from metrics import estimate_costs, show_metrics
 
 # define css style
 css = """
