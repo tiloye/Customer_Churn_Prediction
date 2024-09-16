@@ -12,7 +12,7 @@ The customer dataset used in this project was obtained from [kaggle](https://www
 
 The dataset contains 10,000 customer records with 13 features, including demographic information and account details. No missing values or data type inconsistencies were found in the dataset.
 
-I used a heatmap to visualise the correlation between each feature in the dataset in order to determine whether there is a relationship between them. The heatmap showed that all features, with the exception of "Age," which has the highest correlation coefficient of 0.29 with the target feature, have very low correlations with each another.
+I used a heatmap to visualise the correlation between each feature in the dataset in order to determine whether there is a relationship between them. The heatmap showed that all features, with the exception of Age, which has the highest correlation coefficient of 0.29 with the target feature, have very low correlations with each another.
 
 I created a bar plot of the target feature to see the distribution of the number of customers who left and those who stayed. This revealed that roughly 80% of customers stayed and 20% left. Further analysis revealed that each class's credit score, age, and account balance appear to be normally distributed, with the exception of estimated salary, which appears to be uniformly distributed.
 
